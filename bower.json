@@ -1,0 +1,25 @@
+{
+  "name": "ng2-message-list",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jwcarroll/ng2-message-list",
+  "authors": [
+    "Josh Carroll <jwarren.carroll@gmail.com>"
+  ],
+  "description": "Simple Angular 2 application for testing",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "lodash": "~3.5.0"
+  }
+}
