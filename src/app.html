@@ -1,0 +1,18 @@
+<style>@import "lib/bootstrap.css";</style>
+
+<div class="container">
+    <div class="center-block">
+        <div class="container text-center">
+            <h1>Powered by Angular 2.0</h1>
+        </div>
+        <div class="form-group form-group-lg text-center">
+            <input class="form-control" placeholder="Type something..." type="text" #newmsg (keyup)="updateValue($event, newmsg)">
+        </div>
+        <div class="form-group form-group-lg text-center">
+            <button *foreach="#msgCounts in [10,100,1000,5000]" type="button" class="btn btn-lg btn-link" (click)="addMessages(msgCounts)">Add {{msgCounts}} Messages</button>
+        </div>
+        <h1>{{messages.length}} Messages</h1>
+        <hr />
+        <message *foreach="#msg in messages" [msg]="msg"></message>
+    </div>
+</div>
